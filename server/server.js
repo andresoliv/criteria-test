@@ -4,6 +4,7 @@ const path = require('path');
 const testData = require('../src/database.js');
 
 app.use(express.static(path.join(__dirname, '../src')));
+app.use(express.static(path.join(__dirname, '../')));
 app.use(function(req, res, next) {
   res.setHeader('Content-Type', 'text/html')
   next();
