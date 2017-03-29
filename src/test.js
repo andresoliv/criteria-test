@@ -26,7 +26,7 @@ function submitAnswer(event) {
   //submit test if at end of questions
   if (questions.length === i) {
     // Show submit screen
-    location.href = "http://localhost:3000/submit";
+    location.href = "/submit";
     return;
   }
 
