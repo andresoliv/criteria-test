@@ -69,7 +69,7 @@ var x = setInterval(function() {
   if (distance <= 0) {
     clearInterval(x);
     document.getElementById("timer").innerHTML = "EXPIRED";
-    location.href = "http://localhost:3000/submit";
+    location.href = "/submit";
     //TODO: disable history, so client cannot press back button to go back to the test
   }
 }, 1000);
