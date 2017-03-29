@@ -2,7 +2,7 @@
 body {
   color: black;
   font-family: 'Cuprum', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   color: #000000;
   margin: auto;
   text-align: center;
@@ -33,10 +33,12 @@ body {
 }
 
 #submit-button {
-  background-color: lightblue;
+  background-color: coral;
+  color: white;
+  font-size: 20px;
   margin-top: 3vh;
   border: 0;
   box-shadow:none;
-  border-radius: 5px;
   outline: none;
+  padding: 10px 10px;
 }
