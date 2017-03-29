@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Cuprum);
+body {
+  color: black;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 15px;
+  color: #000000;
+  margin: auto;
+  text-align: center;
+}
+
+#start {
+  display: block;
+}
+
+#timer {
+  color: #ff0000;
+  font-size: 17px;
+}
+
+#question-wrapper {
+  display: inline-block;
+  text-align: left;
+  margin-top: 3vh;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  padding: 20px 20px;
+  box-shadow: 5px 5px 2px #888888;
+}
+
+#submit-button {
+  background-color: lightblue;
+  margin-top: 3vh;
+  border: 0;
+  box-shadow:none;
+  border-radius: 5px;
+  outline: none;
+}
