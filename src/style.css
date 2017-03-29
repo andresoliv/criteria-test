@@ -2,10 +2,16 @@
 body {
   color: black;
   font-family: 'Cuprum', sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   color: #000000;
   margin: auto;
   text-align: center;
+}
+
+.menu-bar {
+  height: 7vh;
+  width: 100%;
+  background-color: rgba(173, 216, 230, .5);
 }
 
 #start {
@@ -14,7 +20,7 @@ body {
 
 #timer {
   color: #ff0000;
-  font-size: 17px;
+  font-size: 22px;
 }
 
 #question-wrapper {
@@ -22,7 +28,6 @@ body {
   text-align: left;
   margin-top: 3vh;
   border: 1px solid #808080;
-  border-radius: 10px;
   padding: 20px 20px;
   box-shadow: 5px 5px 2px #888888;
 }

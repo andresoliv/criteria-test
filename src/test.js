@@ -43,7 +43,7 @@ function askQuestion(question, answers) {
   const letters = ["A", "B", "C", "D"];
   const answersHtml = answers.map((answer, i) => {
     return `
-      ${letters[i]}: <input type="radio" name="answer" value=${letters[i]}>${answer}<br>
+      <input type="radio" name="answer" value=${letters[i]}>  ${answer}<br>
     `;
   }).join(""); 
   answersDiv.innerHTML = answersHtml;
