@@ -4,15 +4,33 @@
   <meta name="viewport" content="width=device-width" charset="UTF-8" >
   <title>Online Testing Submit Page</title>
   <link rel="stylesheet" href="style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="menu-bar"></div>
-  <div id="submit">
-    <h1>Your score was submitted to the test overlords</h1>
+  <div>
+    <h1 id="result-message"></h1>
   </div>
   <script>
-    //TODO: add the calculated test score to the page
+    const answers = {};
+    const sessionStorage = window.sessionStorage;
+    for (let i = 0; i < sessionStorage.length; ++i) {
+      answers[i] = sessionStorage[i];
+    }
+
+    $.ajax({
+      type: "POST",
+      url: "/score",
+      data: JSON.stringify(answers),
+      contentType: 'application/json; charset=UTF-8',
+    }).then((data)=> {
+      const score = JSON.parse(data)["score"];
+      $("#result-message").html(`Your score of <span style="color:red">${score}</span> out of 100 was submitted to the test overlords`)
+      window.sessionStorage.clear();
+    });
   </script>
-  <!--TODO: on successful submission, clear session storage-->
 </body>
 </html>
